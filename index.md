@@ -3,6 +3,28 @@ layout: homepage
 title: Zhiyou Zhang
 ---
 
+<section class="intro-gate" id="intro-gate" aria-label="Intro">
+  <div class="intro-gate__content lang-block" data-lang="zh">
+    <img class="intro-gate__avatar" src="{{ '/assets/images/证件照2.jpg' | relative_url }}" alt="张芷悠">
+    <h1>Hi! I’m Zhiyou Zhang.</h1>
+    <p>我是布里斯托大学机器人 MSc 项目在读学生，正在应聘<strong>产品经理（AI/技术）实习岗</strong>。</p>
+    <p>我的个人优势是具备<strong>软件工程 + AI 技术</strong>背景，理解产品需求、技术实现与系统落地之间的衔接，有从<strong>需求分析、方案设计、功能实现到效果验证</strong>的完整项目实践经历，并且熟悉<strong>数据分析、SQL、Python、Web 系统开发</strong>，具备较强的逻辑分析与问题拆解能力。我有团队协作与项目推进经验，多次担任组长，可推动方案落地并协调执行。</p>
+    <p>我的爱好是摄影、美食、旅游、DIY、羽毛球和阅读......</p>
+    <p>我的 MBTI 人格是 ENTJ，但也有朋友认为我很有共情力，更像是 ENFJ : )</p>
+  </div>
+  <div class="intro-gate__content lang-block" data-lang="en">
+    <img class="intro-gate__avatar" src="{{ '/assets/images/证件照2.jpg' | relative_url }}" alt="Zhiyou Zhang">
+    <h1>Hi! I’m Zhiyou Zhang.</h1>
+    <p>I am currently studying in the Robotics MSc programme at the University of Bristol and applying for <strong>Product Manager (AI/Tech) internship roles</strong>.</p>
+    <p>My strengths come from a <strong>software engineering + AI technical background</strong>. I understand the connection between product requirements, technical implementation, and system delivery. I have full-cycle project experience from <strong>requirement analysis, solution design, feature implementation, and result validation</strong>, and I am familiar with <strong>data analysis, SQL, Python, and Web system development</strong>. I also have strong logical analysis and problem decomposition skills, teamwork and project delivery experience, and have served as team leader several times to coordinate execution and turn plans into working outcomes.</p>
+    <p>My hobbies include photography, food, travel, DIY, badminton, and reading......</p>
+    <p>My MBTI is ENTJ, although some friends think I am more like ENFJ because I am also empathetic : )</p>
+  </div>
+  <div class="intro-gate__cursor" id="intro-cursor">点击任意位置进入首页</div>
+  <div class="intro-gate__mobile-hint lang-block" data-lang="zh">点击任意位置进入首页</div>
+  <div class="intro-gate__mobile-hint lang-block" data-lang="en">Click anywhere to enter</div>
+</section>
+
 <nav class="page-nav">
   <div class="page-nav__inner">
     <div class="page-nav__links">
@@ -16,21 +38,17 @@ title: Zhiyou Zhang
       <a class="lang-block" href="#skills-en" data-lang="en">🧩 Core Skills</a>
       <a class="lang-block" href="#project-experience" data-lang="zh">💻 项目经历</a>
       <a class="lang-block" href="#project-experience-en" data-lang="en">💻 Project Experience</a>
-      <a class="lang-block" href="#honors-awards" data-lang="zh">🏅 荣誉奖项</a>
-      <a class="lang-block" href="#honors-awards-en" data-lang="en">🏅 Honors and Awards</a>
+      <a class="lang-block" href="#portfolio" data-lang="zh">🎨 作品集</a>
+      <a class="lang-block" href="#portfolio-en" data-lang="en">🎨 Portfolio</a>
+      <a class="lang-block" href="#honors-awards" data-lang="zh">🏅 校园经历与荣誉</a>
+      <a class="lang-block" href="#honors-awards-en" data-lang="en">🏅 Leadership and Awards</a>
     </div>
     <div class="page-nav__actions">
       <div class="lang-switch" aria-label="Language switch">
         <button class="is-active" type="button" data-set-lang="zh">中文</button>
         <button type="button" data-set-lang="en">EN</button>
       </div>
-      <div class="resume-download" id="resume-download">
-        <button class="resume-download__button" id="resume-download-toggle" type="button" aria-expanded="false" aria-haspopup="true">⬇️ 下载简历</button>
-        <div class="resume-download__menu" id="resume-download-menu">
-          <a class="resume-download__option" href="{{ '/assets/张芷悠-2026-03-16.pdf' | relative_url }}" download>中文简历</a>
-          <a class="resume-download__option" href="{{ '/assets/zhiyou_zhang_resume_march.pdf' | relative_url }}" download>English Resume</a>
-        </div>
-      </div>
+      <a class="resume-download__button" href="{{ '/assets/张芷悠_产品实习_2026_4月.pdf' | relative_url }}" download>⬇️ 下载简历</a>
     </div>
   </div>
 </nav>
@@ -45,14 +63,16 @@ title: Zhiyou Zhang
 
         <section class="identity lang-block" data-lang="zh">
           <span class="name">张芷悠</span>
-          <span class="org">University of Bristol</span>
-          <span class="org-sub">布里斯托大学 · Robotics</span>
+          <span class="org">布里斯托大学</span>
+          <span class="org-sub">机器人 MSc</span>
+          <span class="org-sub">产品经理（AI/技术）</span>
         </section>
 
         <section class="identity lang-block" data-lang="en">
           <span class="name">Zhiyou Zhang</span>
           <span class="org">University of Bristol</span>
-          <span class="org-sub">MSc Robotics · Software Engineering Background</span>
+          <span class="org-sub">MSc Robotics</span>
+          <span class="org-sub">Product Manager (AI/Tech)</span>
         </section>
 
         <div class="contact-list lang-block" data-lang="zh">
@@ -158,16 +178,20 @@ title: Zhiyou Zhang
       <section class="section lang-block" id="about-me" data-lang="zh">
         <h3>👋 About Me 👋 关于我</h3>
         <div class="about-text">
-          <p>你好！👋 我叫张芷悠，目前在布里斯托大学攻读 Robotics 硕士，拥有软件工程本科背景。我关注的方向包括机器视觉、深度学习、多模态智能系统，以及面向真实场景的工程化实现。</p>
-          <p>我希望把算法能力和系统能力结合起来：既能完成模型设计、训练与优化，也能把成果落到 Web 应用、后端服务和产品原型中。🚀 如果你对我的项目经历、技术博客或合作方向感兴趣，欢迎通过邮件与我联系。</p>
+          <p>我是布里斯托大学机器人 MSc 项目在读学生，正在应聘产品经理（AI/技术）实习岗。</p>
+          <p>我的个人优势是具备软件工程 + AI 技术背景，理解产品需求、技术实现与系统落地之间的衔接，有从需求分析、方案设计、功能实现到效果验证的完整项目实践经历，并且熟悉数据分析、SQL、Python、Web 系统开发，具备较强的逻辑分析与问题拆解能力。我有团队协作与项目推进经验，多次担任组长，可推动方案落地并协调执行。</p>
+          <p>我的爱好是摄影、美食、旅游、DIY、羽毛球和阅读......</p>
+          <p>我的 MBTI 人格是 ENTJ，但也有朋友认为我很有共情力，更像是 ENFJ : ) </p>
         </div>
       </section>
 
       <section class="section lang-block" id="about-me-en" data-lang="en">
         <h3>👋 About Me 👋</h3>
         <div class="about-text">
-          <p>Hi! 👋 My name is Zhiyou Zhang. I am currently pursuing an MSc in Robotics at the University of Bristol, with a software engineering background. My interests include machine vision, deep learning, multimodal systems, and engineering AI solutions for real-world use.</p>
-          <p>I aim to combine algorithmic thinking with solid system-building skills: from model design and training to backend services, web applications, and usable prototypes. 🚀 If you are interested in my work, blog, or potential collaboration, feel free to reach out by email.</p>
+          <p>I am currently studying in the Robotics MSc programme at the University of Bristol and applying for Product Manager (AI/Tech) internship roles.</p>
+          <p>My strengths come from a software engineering + AI technical background. I understand the connection between product requirements, technical implementation, and system delivery. I have full-cycle project experience from requirement analysis, solution design, and feature implementation to result validation, and I am familiar with data analysis, SQL, Python, and Web system development. I also have strong logical analysis and problem decomposition skills, teamwork and project delivery experience, and have served as team leader several times to coordinate execution and turn plans into working outcomes.</p>
+          <p>My hobbies include photography, food, travel, DIY, badminton, and reading......</p>
+          <p>My MBTI is ENTJ, although some friends think I am more like ENFJ because I am also empathetic : )</p>
         </div>
       </section>
 
@@ -176,11 +200,11 @@ title: Zhiyou Zhang
         <ul class="entry-list">
           <li>
             <strong>2025.09 - 2026.11（预计）</strong>: 布里斯托大学 Robotics 硕士。
-            <span class="entry-subline">研究兴趣聚焦深度学习、多模态方向。</span>
+            <span class="entry-subline">核心课程包括 Artificial Intelligence for Robotics、Machine Vision、Human-Robot Interaction 等。</span>
           </li>
           <li>
             <strong>2021.09 - 2025.06</strong>: 广东东软学院 × UWE Bristol 软件工程本科联合培养项目。
-            <span class="entry-subline">GPA 3.66/5，专业排名第 1，形成了扎实的软件工程与全栈开发基础。</span>
+            <span class="entry-subline">GPA 3.66/5，专业排名第 1；核心课程包括面向对象开发、算法、计算机网络、数据结构、软件测试等。</span>
           </li>
         </ul>
       </section>
@@ -190,11 +214,11 @@ title: Zhiyou Zhang
         <ul class="entry-list">
           <li>
             <strong>2025.09 - 2026.11 (expected)</strong>: MSc Robotics, University of Bristol.
-            <span class="entry-subline">Focused on deep learning and multimodal approaches.</span>
+            <span class="entry-subline">Core courses include Artificial Intelligence for Robotics, Machine Vision, and Human-Robot Interaction.</span>
           </li>
           <li>
             <strong>2021.09 - 2025.06</strong>: BSc Software Engineering, joint programme of Neusoft Institute Guangdong and UWE Bristol.
-            <span class="entry-subline">GPA 3.66/5, ranked 1st in the programme, with a strong foundation in software engineering and full-stack development.</span>
+            <span class="entry-subline">GPA 3.66/5, ranked 1st in the programme; coursework covered object-oriented development, algorithms, networks, data structures, and software testing.</span>
           </li>
         </ul>
       </section>
@@ -203,24 +227,24 @@ title: Zhiyou Zhang
         <h3>🧩 Core Skills 🧩 核心技能</h3>
         <ul class="entry-list">
           <li>
-            <strong>数据与算法</strong>
-            <span class="entry-subline">熟悉关系型数据库与 SQL；具备丰富的数据挖掘、特征工程、算法优化与数据清洗经验（Pandas / NumPy）。</span>
+            <strong>产品与分析</strong>
+            <span class="entry-subline">熟悉需求分析、竞品分析、问卷调研、PRD / 方案文档撰写、功能设计、用户流程梳理与跨团队协作。</span>
           </li>
           <li>
-            <strong>深度学习与算法</strong>
-            <span class="entry-subline">熟悉 PyTorch 框架，掌握 CNN、Transformer、Attention、CBAM 及 MOE（混合专家模型）；具备多层系统架构设计意识。</span>
+            <strong>AI 与数据理解</strong>
+            <span class="entry-subline">理解机器视觉、多模态模型与深度学习基础，能结合业务问题拆解模型能力、数据指标、失效场景与产品边界。</span>
           </li>
           <li>
-            <strong>工程与部署</strong>
-            <span class="entry-subline">熟悉 Linux 后台操作、Git 版本控制、Docker 容器化部署；具备复杂性分析与系统优化能力。</span>
+            <strong>工具与原型</strong>
+            <span class="entry-subline">熟悉 Excel、SQL、Python、ProcessOn、XMind、Figma 等工具，可完成数据整理、流程图、信息架构与原型表达。</span>
           </li>
           <li>
-            <strong>编程语言与范式</strong>
-            <span class="entry-subline">熟练掌握 Python、Java、C++；熟练掌握面向对象设计（OOP）与数据结构。</span>
+            <strong>技术与工程基础</strong>
+            <span class="entry-subline">具备 Web 系统开发基础，熟悉 Flask、Django、Vue3、RESTful API、Git、Linux，可与研发高效沟通技术可行性。</span>
           </li>
           <li>
-            <strong>软件开发与系统架构</strong>
-            <span class="entry-subline">熟悉多层系统架构、RESTful API 设计；熟练使用 Django、Flask、Vue3 等 Web 框架进行全栈开发。</span>
+            <strong>组织与表达</strong>
+            <span class="entry-subline">有学生组织宣传策划与项目统筹经验，擅长内容审核、任务推进、跨部门沟通和结果复盘。</span>
           </li>
         </ul>
       </section>
@@ -229,24 +253,24 @@ title: Zhiyou Zhang
         <h3>🧩 Core Skills 🧩</h3>
         <ul class="entry-list">
           <li>
-            <strong>Data and Algorithms</strong>
-            <span class="entry-subline">Familiar with relational databases and SQL, with hands-on experience in data mining, feature engineering, algorithm optimisation, and data cleaning using Pandas and NumPy.</span>
+            <strong>Product and Analysis</strong>
+            <span class="entry-subline">Experienced in requirement analysis, competitor research, survey design, PRD / solution documentation, feature design, user flow mapping, and cross-team collaboration.</span>
           </li>
           <li>
-            <strong>Deep Learning</strong>
-            <span class="entry-subline">Proficient with PyTorch and familiar with CNN, Transformer, Attention, CBAM, and MOE architectures, with awareness of multi-tier system design.</span>
+            <strong>AI and Data Literacy</strong>
+            <span class="entry-subline">Understands machine vision, multimodal models, and deep learning fundamentals, with the ability to connect model capability, data metrics, failure cases, and product constraints.</span>
           </li>
           <li>
-            <strong>Engineering and Deployment</strong>
-            <span class="entry-subline">Comfortable with Linux backend environments, Git-based workflows, Docker container deployment, and system optimisation.</span>
+            <strong>Tools and Prototyping</strong>
+            <span class="entry-subline">Comfortable with Excel, SQL, Python, ProcessOn, XMind, and Figma for data handling, workflow diagrams, information architecture, and prototype communication.</span>
           </li>
           <li>
-            <strong>Programming Languages</strong>
-            <span class="entry-subline">Strong command of Python, Java, and C++, with solid understanding of object-oriented programming and data structures.</span>
+            <strong>Technical Foundation</strong>
+            <span class="entry-subline">Has Web development fundamentals and hands-on experience with Flask, Django, Vue3, RESTful APIs, Git, and Linux, enabling effective communication with engineering teams.</span>
           </li>
           <li>
-            <strong>Software Architecture</strong>
-            <span class="entry-subline">Familiar with multi-tier architectures, RESTful API design, and full-stack development using Django, Flask, and Vue3.</span>
+            <strong>Coordination and Communication</strong>
+            <span class="entry-subline">Experienced in student organization leadership, content planning, review workflows, task coordination, cross-department communication, and delivery review.</span>
           </li>
         </ul>
       </section>
@@ -256,41 +280,45 @@ title: Zhiyou Zhang
         <div class="timeline">
           <article class="timeline-item">
             <div class="timeline-head">
-              <span class="timeline-date">2024.09 - 2026.02</span>
-              <span class="timeline-title">多模态视觉语言模型驱动的图像美学分析 Agent 系统，本科毕业设计，独立完成</span>
-            </div>
-            <ul class="timeline-points">
-              <li>构建视觉-语言多模态模型（Swin + BLIP + MoE），实现图像美学评分与可解释性分析，在 TAD66K 上 SRCC 达 0.6806。</li>
-              <li>引入 RAG 美学知识增强，并封装为 Agent 自动完成“理解→评分→分析”，基于 Flask 部署推理服务。</li>
-            </ul>
-          </article>
-          <article class="timeline-item">
-            <div class="timeline-head">
               <span class="timeline-date">2025.10 - 2025.12</span>
-              <span class="timeline-title">轻量化苹果计数与跨场景泛化分析，机器视觉课程项目，团队负责人</span>
+              <span class="timeline-title">面向复杂场景的苹果计数分析，Machine Vision 课程项目，组长</span>
             </div>
             <ul class="timeline-points">
-              <li>面向果园场景苹果计数任务，基于 EfficientNet-B0 构建计数模型，融合 RGB+LBP、Channel Gate 与 CBAM，在 MinneApple 上实现 MAE 0.169 / ACC 87.06%。</li>
-              <li>设计消融实验、Grad-CAM 与误差分析，完成跨数据集泛化测试，并实现 ONNX INT8 量化部署提升推理效率。</li>
+              <li>面向农业视觉场景下遮挡、光照变化等问题，参与设计轻量化苹果计数方案，提升复杂环境中的识别稳定性。</li>
+              <li>通过 Grad-CAM 可视化和预测误差分析定位关键失效场景，识别遮挡、反光、密集果串等主要影响因素。</li>
+              <li>在 MinneApple 数据集上实现 MAE 0.169，较 Baseline 下降约 19.5%，锻炼了数据分析与问题拆解能力。</li>
             </ul>
           </article>
           <article class="timeline-item">
             <div class="timeline-head">
-              <span class="timeline-date">2024.04 - 2024.06</span>
-              <span class="timeline-title">基于网络爬虫的跨平台商品比价系统设计与实现，课外实践项目，团队负责人</span>
+              <span class="timeline-date">2024.09 - 2025.03</span>
+              <span class="timeline-title">基于多模态技术的图像美学分析系统，毕业设计，个人项目</span>
             </div>
             <ul class="timeline-points">
-              <li>主导开发 Django + Vue3 + Selenium 系统，实现多平台商品自动抓取与比价，解决动态网页爬取问题。</li>
+              <li>针对用户难以快速判断图片质量、且缺少可解释反馈的问题，设计“图片评分 + 审美分析文本”产品方案。</li>
+              <li>从用户使用路径出发拆解图像上传、评分生成、分析反馈、结果展示等核心模块，完成需求定义、功能结构设计与 Flask Web Demo 原型搭建。</li>
+              <li>推动算法能力向可交互产品形态落地，平均推理时间 1.9s/张；在 TAD66K 数据集上 SRCC 达 0.6806，并获 2025 届优秀毕业设计（论文）奖。</li>
             </ul>
           </article>
           <article class="timeline-item">
             <div class="timeline-head">
-              <span class="timeline-date">2023.02 - 2023.05</span>
-              <span class="timeline-title">基于高光谱显微成像的周细胞分类，“挑战杯”竞赛项目，团队负责人</span>
+              <span class="timeline-date">2024.04 - 2024.07</span>
+              <span class="timeline-title">基于网络爬虫的跨平台商品比价系统，“三创赛”项目，组长</span>
             </div>
             <ul class="timeline-points">
-              <li>构建高光谱二分类任务，设计预处理 pipeline 并对比 SVM / RF，SVM 测试集 accuracy 达 98.5%。</li>
-              <li>通过 Grid Search 优化与数据平衡策略提升性能，项目获“挑战杯”省铜奖并发表论文。</li>
+              <li>针对跨平台比价成本高、效率低的问题，组织团队完成用户调研、竞品分析与系统方案设计，明确抓取、聚合、展示等关键功能。</li>
+              <li>负责总体统筹与后端爬虫模块开发，推动 Django + Vue3 + Selenium 技术方案落地。</li>
+              <li>以第一作者发表万方收录论文《基于网络爬虫的跨平台商品比价系统设计与实现》，项目获“三创赛”二等奖。</li>
+            </ul>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-head">
+              <span class="timeline-date">2022.04 - 2023.05</span>
+              <span class="timeline-title">基于高光谱显微成像技术的周细胞分类，“挑战杯”项目，组长</span>
+            </div>
+            <ul class="timeline-points">
+              <li>参与基于高光谱显微成像的周细胞分类方案研究，负责图像预处理、实验推进与项目统筹。</li>
+              <li>对比不同分类模型效果，预实验中 SVM 准确率达 98.5%，项目获“挑战杯”广东省铜奖。</li>
             </ul>
           </article>
         </div>
@@ -301,53 +329,90 @@ title: Zhiyou Zhang
         <div class="timeline">
           <article class="timeline-item">
             <div class="timeline-head">
-              <span class="timeline-date">2024.09 - 2026.02</span>
-              <span class="timeline-title">Multimodal Vision-Language Aesthetic Analysis Agent, undergraduate dissertation, individual project</span>
-            </div>
-            <ul class="timeline-points">
-              <li>Built a multimodal VLM with Swin, BLIP and MoE fusion for aesthetic scoring and explainable analysis on TAD66K.</li>
-              <li>Integrated RAG-based aesthetic knowledge and deployed the end-to-end Agent with Flask.</li>
-            </ul>
-          </article>
-          <article class="timeline-item">
-            <div class="timeline-head">
               <span class="timeline-date">2025.10 - 2025.12</span>
-              <span class="timeline-title">Lightweight Apple Counting with Cross-Scene Generalization, Machine Vision course project, team leader</span>
+              <span class="timeline-title">Apple Counting Analysis for Complex Scenes, Machine Vision course project, team leader</span>
             </div>
             <ul class="timeline-points">
-              <li>Built an EfficientNet-B0 based counting model with RGB-LBP and attention modules, achieving MAE 0.169 and ACC 87.06% on MinneApple.</li>
-              <li>Conducted ablations, Grad-CAM analysis and ONNX INT8 deployment for generalization and efficiency.</li>
+              <li>Helped design a lightweight apple-counting solution for agricultural scenes with occlusion and lighting variation, improving recognition stability in complex environments.</li>
+              <li>Used Grad-CAM visualization and prediction error analysis to identify key failure cases such as occlusion, reflection, and dense fruit clusters.</li>
+              <li>Achieved MAE 0.169 on MinneApple, about 19.5% lower than the baseline, strengthening data analysis and problem decomposition skills.</li>
             </ul>
           </article>
           <article class="timeline-item">
             <div class="timeline-head">
-              <span class="timeline-date">2024.04 - 2024.06</span>
-              <span class="timeline-title">Cross-Platform Price Comparison System, extracurricular practice project, team leader</span>
+              <span class="timeline-date">2024.09 - 2025.03</span>
+              <span class="timeline-title">Multimodal Image Aesthetic Analysis System, undergraduate dissertation, individual project</span>
             </div>
             <ul class="timeline-points">
-              <li>Led the development of a Django + Vue3 + Selenium system for automated product crawling and price comparison across platforms.</li>
+              <li>Designed a product solution for image scoring and aesthetic feedback to help users quickly assess image quality with explainable analysis.</li>
+              <li>Mapped the user flow into core modules including image upload, score generation, analysis feedback, and result presentation; completed requirement definition, feature structure design, and a Flask Web Demo prototype.</li>
+              <li>Turned model capability into an interactive product experience with 1.9s average inference per image; achieved SRCC 0.6806 on TAD66K and received an outstanding dissertation award.</li>
             </ul>
           </article>
           <article class="timeline-item">
             <div class="timeline-head">
-              <span class="timeline-date">2023.02 - 2023.05</span>
-              <span class="timeline-title">Pericyte Classification via Hyperspectral Imaging, Challenge Cup competition project, team leader</span>
+              <span class="timeline-date">2024.04 - 2024.07</span>
+              <span class="timeline-title">Cross-Platform Price Comparison System, E-commerce Challenge project, team leader</span>
             </div>
             <ul class="timeline-points">
-              <li>Built a hyperspectral binary classification pipeline with preprocessing; SVM achieved 98.5% test accuracy.</li>
-              <li>Optimized via grid search and data balancing; awarded provincial bronze prize and published a paper.</li>
+              <li>Organized user research, competitor analysis, and system solution design for inefficient cross-platform price comparison workflows.</li>
+              <li>Coordinated the project and developed backend crawler modules, landing the Django + Vue3 + Selenium technical solution.</li>
+              <li>Published a Wanfang-indexed paper as first author and won a second prize in the E-commerce Innovation, Creativity and Entrepreneurship Challenge.</li>
+            </ul>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-head">
+              <span class="timeline-date">2022.04 - 2023.05</span>
+              <span class="timeline-title">Pericyte Classification via Hyperspectral Microscopic Imaging, Challenge Cup project, team leader</span>
+            </div>
+            <ul class="timeline-points">
+              <li>Participated in research on hyperspectral microscopic imaging for pericyte classification, responsible for image preprocessing, experiment execution, and project coordination.</li>
+              <li>Compared classification models; SVM reached 98.5% accuracy in preliminary experiments, and the project won the Guangdong provincial bronze award in the Challenge Cup.</li>
             </ul>
           </article>
         </div>
       </section>
 
+      <section class="section lang-block" id="portfolio" data-lang="zh">
+        <h3>🎨 Portfolio 🎨 作品集</h3>
+        <div class="portfolio-placeholder">
+          <p>正在整理，感谢等待。</p>
+          <span>后续将补充 Figma Make 发布的产品原型与作品链接。</span>
+        </div>
+      </section>
+
+      <section class="section lang-block" id="portfolio-en" data-lang="en">
+        <h3>🎨 Portfolio 🎨</h3>
+        <div class="portfolio-placeholder">
+          <p>Coming soon. Thank you for waiting.</p>
+          <span>Product prototypes and Figma Make links will be added here.</span>
+        </div>
+      </section>
+
       <section class="section lang-block" id="honors-awards" data-lang="zh">
-        <h3>🏅 Honors and Awards 🏅 荣誉与奖项</h3>
+        <h3>🏅 Leadership and Awards 🏅 校园经历与荣誉</h3>
         <div class="timeline">
           <article class="timeline-item">
             <div class="timeline-head">
-              <span class="timeline-date">2024.12</span>
+              <span class="timeline-date">2025.12</span>
               <span class="timeline-title">获 2025 届优秀毕业设计（论文）奖</span>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-head">
+              <span class="timeline-date">2022.10 - 2024.10</span>
+              <span class="timeline-title">学院学生会宣传策划部部长，宣传策划与项目统筹</span>
+            </div>
+            <ul class="timeline-points">
+              <li>统筹约 30 人团队推进宣传任务落地，负责活动策划、内容审核与跨部门协作。</li>
+              <li>参与迎新、学生代表大会、校运会、招生咨询会等大型校园活动宣传策划与执行。</li>
+              <li>负责公众号运营、摄影、海报设计、推文撰写与初审等宣传任务，累计参与推文撰写及初审 23 篇。</li>
+            </ul>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-head">
+              <span class="timeline-date">2024.07</span>
+              <span class="timeline-title">获全国大学生英语竞赛优秀奖</span>
             </div>
           </article>
           <article class="timeline-item">
@@ -366,12 +431,29 @@ title: Zhiyou Zhang
       </section>
 
       <section class="section lang-block" id="honors-awards-en" data-lang="en">
-        <h3>🏅 Honors and Awards 🏅</h3>
+        <h3>🏅 Leadership and Awards 🏅</h3>
         <div class="timeline">
           <article class="timeline-item">
             <div class="timeline-head">
-              <span class="timeline-date">2024.12</span>
+              <span class="timeline-date">2025.12</span>
               <span class="timeline-title">Awarded the 2025 Outstanding Undergraduate Graduation Project (Thesis) Prize</span>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-head">
+              <span class="timeline-date">2022.10 - 2024.10</span>
+              <span class="timeline-title">Head of Publicity and Planning Department, Student Union</span>
+            </div>
+            <ul class="timeline-points">
+              <li>Coordinated a team of around 30 members to deliver publicity tasks, covering event planning, content review, and cross-department collaboration.</li>
+              <li>Supported publicity planning and execution for major campus events including orientation, student congress, sports meeting, and admissions consultation.</li>
+              <li>Handled official account operation, photography, poster design, article writing, and content review, contributing to 23 published or reviewed articles.</li>
+            </ul>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-head">
+              <span class="timeline-date">2024.07</span>
+              <span class="timeline-title">Received an Excellence Award in the National English Competition for College Students</span>
             </div>
           </article>
           <article class="timeline-item">
@@ -392,17 +474,44 @@ title: Zhiyou Zhang
   </div>
 </div>
 
+<footer class="site-footer">
+  <div class="site-footer__inner lang-block" data-lang="zh">
+    <div class="site-footer__line">
+      <span>© 2026 张芷悠</span>
+      <span class="site-footer__dot">·</span>
+      <span>本站由 Jekyll、Liquid、Markdown、HTML、CSS 与 JavaScript 构建，托管于 GitHub Pages。</span>
+      <span class="site-footer__dot">·</span>
+      <span>最后更新：2026.04</span>
+    </div>
+  </div>
+  <div class="site-footer__inner lang-block" data-lang="en">
+    <div class="site-footer__line">
+      <span>© 2026 Zhiyou Zhang</span>
+      <span class="site-footer__dot">·</span>
+      <span>Built with Jekyll, Liquid, Markdown, HTML, CSS, and JavaScript. Hosted on GitHub Pages.</span>
+      <span class="site-footer__dot">·</span>
+      <span>Last updated: 2026.04</span>
+    </div>
+  </div>
+</footer>
+
 <script>
   (function () {
     var key = "site-lang";
     var buttons = document.querySelectorAll("[data-set-lang]");
-    var resumeWrap = document.getElementById("resume-download");
-    var resumeToggle = document.getElementById("resume-download-toggle");
+    var introGate = document.getElementById("intro-gate");
+    var introCursor = document.getElementById("intro-cursor");
+    var nav = document.querySelector(".page-nav");
+    var navLinks = document.querySelectorAll(".page-nav__links a[href^='#']");
     var copyItems = document.querySelectorAll(".contact-item.copyable");
     var themeButtons = document.querySelectorAll(".theme-toggle");
     var initial = localStorage.getItem(key) || "zh";
     var themeKey = "site-theme";
     var initialTheme = localStorage.getItem(themeKey) || "light";
+
+    if (introGate) {
+      document.body.classList.add("intro-active");
+    }
 
     function setLang(lang) {
       document.body.setAttribute("data-lang", lang);
@@ -410,8 +519,8 @@ title: Zhiyou Zhang
         buttons[i].classList.toggle("is-active", buttons[i].getAttribute("data-set-lang") === lang);
       }
       localStorage.setItem(key, lang);
-      if (resumeToggle) {
-        resumeToggle.textContent = lang === "en" ? "⬇️ Download Resume" : "⬇️ 下载简历";
+      if (introCursor) {
+        introCursor.textContent = lang === "en" ? "Click anywhere to enter" : "点击任意位置进入首页";
       }
     }
 
@@ -426,17 +535,52 @@ title: Zhiyou Zhang
       });
     }
 
-    if (resumeWrap && resumeToggle) {
-      resumeToggle.addEventListener("click", function () {
-        var isOpen = resumeWrap.classList.toggle("is-open");
-        resumeToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+    function scrollToAnchor(hash) {
+      var target = document.querySelector(hash);
+      if (!target) {
+        return;
+      }
+
+      var navHeight = nav ? nav.getBoundingClientRect().height : 0;
+      var extraGap = 14;
+      var top = target.getBoundingClientRect().top + window.pageYOffset - navHeight - extraGap;
+
+      window.scrollTo({
+        top: Math.max(0, top),
+        behavior: "smooth"
       });
 
-      document.addEventListener("click", function (event) {
-        if (!resumeWrap.contains(event.target)) {
-          resumeWrap.classList.remove("is-open");
-          resumeToggle.setAttribute("aria-expanded", "false");
+      if (window.history && window.history.pushState) {
+        window.history.pushState(null, "", hash);
+      }
+    }
+
+    for (var navIndex = 0; navIndex < navLinks.length; navIndex += 1) {
+      navLinks[navIndex].addEventListener("click", function (event) {
+        var hash = event.currentTarget.getAttribute("href");
+        if (hash && hash !== "#") {
+          event.preventDefault();
+          scrollToAnchor(hash);
         }
+      });
+    }
+
+    if (introGate) {
+      introGate.addEventListener("mousemove", function (event) {
+        if (!introCursor) {
+          return;
+        }
+
+        introCursor.style.transform = "translate3d(" + (event.clientX + 18) + "px, " + (event.clientY + 18) + "px, 0)";
+      });
+
+      introGate.addEventListener("click", function () {
+        introGate.classList.add("is-leaving");
+        document.body.classList.remove("intro-active");
+
+        window.setTimeout(function () {
+          introGate.setAttribute("hidden", "hidden");
+        }, 900);
       });
     }
 
