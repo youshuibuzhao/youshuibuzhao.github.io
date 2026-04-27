@@ -21,8 +21,8 @@ title: Zhiyou Zhang
     <p>My MBTI is ENTJ, although some friends think I am more like ENFJ because I am also empathetic : )</p>
   </div>
   <div class="intro-gate__cursor" id="intro-cursor">点击任意位置进入首页</div>
-  <div class="intro-gate__mobile-hint lang-block" data-lang="zh">点击任意位置进入首页</div>
-  <div class="intro-gate__mobile-hint lang-block" data-lang="en">Click anywhere to enter</div>
+  <button class="intro-gate__mobile-hint lang-block" type="button" data-lang="zh">点击进入主页</button>
+  <button class="intro-gate__mobile-hint lang-block" type="button" data-lang="en">Tap to enter</button>
 </section>
 
 <nav class="page-nav">
@@ -43,15 +43,16 @@ title: Zhiyou Zhang
       <a class="lang-block" href="#honors-awards" data-lang="zh">🏅 校园经历与荣誉</a>
       <a class="lang-block" href="#honors-awards-en" data-lang="en">🏅 Leadership and Awards</a>
     </div>
-    <div class="page-nav__actions">
-      <div class="lang-switch" aria-label="Language switch">
-        <button class="is-active" type="button" data-set-lang="zh">中文</button>
-        <button type="button" data-set-lang="en">EN</button>
-      </div>
-      <a class="resume-download__button" href="{{ '/assets/张芷悠_产品实习_2026_4月.pdf' | relative_url }}" download>⬇️ 下载简历</a>
-    </div>
   </div>
 </nav>
+
+<div class="page-nav__actions">
+  <div class="lang-switch" aria-label="Language switch">
+    <button class="is-active" type="button" data-set-lang="zh">中文</button>
+    <button type="button" data-set-lang="en">EN</button>
+  </div>
+  <a class="resume-download__button" href="{{ '/assets/张芷悠_产品实习_2026_4月.pdf' | relative_url }}" download>⬇️ 下载简历</a>
+</div>
 
 <div class="page-shell" id="top">
   <div class="page-grid">
@@ -199,12 +200,15 @@ title: Zhiyou Zhang
         <h3>📘 Education 📘 教育</h3>
         <ul class="entry-list">
           <li>
-            <strong>2025.09 - 2026.11（预计）</strong>: 布里斯托大学 Robotics 硕士。
+            <strong class="education-title">布里斯托大学 Robotics 硕士</strong>
+            <span class="entry-subline">2025.09 - 2026.11（预计）</span>
             <span class="entry-subline">核心课程包括 Artificial Intelligence for Robotics、Machine Vision、Human-Robot Interaction 等。</span>
           </li>
           <li>
-            <strong>2021.09 - 2025.06</strong>: 广东东软学院 × UWE Bristol 软件工程本科联合培养项目。
-            <span class="entry-subline">GPA 3.66/5，专业排名第 1；核心课程包括面向对象开发、算法、计算机网络、数据结构、软件测试等。</span>
+            <strong class="education-title">广东东软学院 × UWE Bristol 软件工程本科联合培养项目</strong>
+            <span class="entry-subline">2021.09 - 2025.06</span>
+            <span class="entry-subline">GPA 3.66/5，专业排名第 1</span>
+            <span class="entry-subline">核心课程包括面向对象开发、算法、计算机网络、数据结构、软件测试等。</span>
           </li>
         </ul>
       </section>
@@ -213,12 +217,15 @@ title: Zhiyou Zhang
         <h3>📘 Education 📘</h3>
         <ul class="entry-list">
           <li>
-            <strong>2025.09 - 2026.11 (expected)</strong>: MSc Robotics, University of Bristol.
+            <strong class="education-title">MSc Robotics, University of Bristol</strong>
+            <span class="entry-subline">2025.09 - 2026.11 (expected)</span>
             <span class="entry-subline">Core courses include Artificial Intelligence for Robotics, Machine Vision, and Human-Robot Interaction.</span>
           </li>
           <li>
-            <strong>2021.09 - 2025.06</strong>: BSc Software Engineering, joint programme of Neusoft Institute Guangdong and UWE Bristol.
-            <span class="entry-subline">GPA 3.66/5, ranked 1st in the programme; coursework covered object-oriented development, algorithms, networks, data structures, and software testing.</span>
+            <strong class="education-title">BSc Software Engineering, joint programme of Neusoft Institute Guangdong and UWE Bristol</strong>
+            <span class="entry-subline">2021.09 - 2025.06</span>
+            <span class="entry-subline">GPA 3.66/5, ranked 1st in the programme</span>
+            <span class="entry-subline">Core courses covered object-oriented development, algorithms, networks, data structures, and software testing.</span>
           </li>
         </ul>
       </section>
@@ -501,6 +508,7 @@ title: Zhiyou Zhang
     var buttons = document.querySelectorAll("[data-set-lang]");
     var introGate = document.getElementById("intro-gate");
     var introCursor = document.getElementById("intro-cursor");
+    var introButtons = document.querySelectorAll(".intro-gate__mobile-hint");
     var nav = document.querySelector(".page-nav");
     var navLinks = document.querySelectorAll(".page-nav__links a[href^='#']");
     var copyItems = document.querySelectorAll(".contact-item.copyable");
@@ -527,6 +535,9 @@ title: Zhiyou Zhang
     function setTheme(theme) {
       document.body.setAttribute("data-theme", theme);
       localStorage.setItem(themeKey, theme);
+      for (var themeIndex = 0; themeIndex < themeButtons.length; themeIndex += 1) {
+        themeButtons[themeIndex].textContent = theme === "dark" ? "☀️" : "🌙";
+      }
     }
 
     for (var i = 0; i < buttons.length; i += 1) {
@@ -541,8 +552,9 @@ title: Zhiyou Zhang
         return;
       }
 
-      var navHeight = nav ? nav.getBoundingClientRect().height : 0;
-      var extraGap = 14;
+      var isMobile = window.matchMedia && window.matchMedia("(max-width: 760px)").matches;
+      var navHeight = !isMobile && nav ? nav.getBoundingClientRect().height : 0;
+      var extraGap = isMobile ? 8 : 14;
       var top = target.getBoundingClientRect().top + window.pageYOffset - navHeight - extraGap;
 
       window.scrollTo({
@@ -574,14 +586,28 @@ title: Zhiyou Zhang
         introCursor.style.transform = "translate3d(" + (event.clientX + 18) + "px, " + (event.clientY + 18) + "px, 0)";
       });
 
-      introGate.addEventListener("click", function () {
+      function enterSite() {
         introGate.classList.add("is-leaving");
         document.body.classList.remove("intro-active");
 
         window.setTimeout(function () {
           introGate.setAttribute("hidden", "hidden");
         }, 900);
+      }
+
+      introGate.addEventListener("click", function (event) {
+        var isMobile = window.matchMedia && window.matchMedia("(max-width: 760px)").matches;
+        if (!isMobile) {
+          enterSite();
+        }
       });
+
+      for (var introButtonIndex = 0; introButtonIndex < introButtons.length; introButtonIndex += 1) {
+        introButtons[introButtonIndex].addEventListener("click", function (event) {
+          event.stopPropagation();
+          enterSite();
+        });
+      }
     }
 
     for (var j = 0; j < copyItems.length; j += 1) {
